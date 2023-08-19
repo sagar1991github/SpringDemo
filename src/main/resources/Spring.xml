@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id ="policy" class="com.Demo.Policy">
+    <constructor-arg value="term plan"></constructor-arg>
+    <constructor-arg value="5500"></constructor-arg>
+  
+    </bean>
+ <bean id="categories"  class="com.Demo.Category" autowire="constructor">
+ <property name="name" value="life Inshurance"></property>
+ <constructor-arg value="life-Inshurance"></constructor-arg>
+ </bean>
+ 
+  <bean id="conditions"  class="com.Demo.Conditions">
+ <property name="terms" value="Dummy"></property>
+ <property name="charges" value="Dummy"></property>
+ 
+ </bean>
+ 
+
+</beans>
